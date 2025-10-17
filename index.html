@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 14 Forms</title>
+    <title>Two Truths and a Lie</title>
 </head>
-<body>
-    
+<body style="background-color: rgb(255, 219, 237);">
+    <h1>- Amy's Truth and Lie Game -</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+
+    <hr>
+
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia1-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
+    </form>
+    <p></p>
+    <input type="button" value="SUBMIT" onclick="trivia1();">
+
+    <hr>
+
+    <h2>Two truths and a lie</h2>
+    <p>Which one is the lie?</p>
+    <p id="truthandlie"></p>
+    <form action="">
+        <input type="radio" name="tl" id="truth1">
+        <label for="truth1">My favorite beverage from the LPC is Pure Leaf Sweet Tea.</label><br>
+        <input type="radio" name="tl" id="lie">
+        <label for="lie">I am a huge fan of horror movies.</label><br>
+        <input type="radio" name="tl" id="truth2">
+        <label for="truth2">I used up the lip balm that my friend Sonya gave me in one month.</label><br>
+    </form>
+    <p></p>
+    <input type="button" value="SUBMIT" onclick="truthandlie();">
+
+    <h2>Two truths and a lie (harder)</h2>
+    <p>Click the two truths:</p>
+    <p id="truthandlie2"></p>
+    <form action="">
+        <input type="checkbox" name="tl" id="2truth1">
+        <label for="2truth1">I used to have a pet fish, but the fish died.</label><br>
+        <input type="checkbox" name="tl" id="2truth2">
+        <label for="2truth2">I did Taekwondo when I was younger.</label><br>
+        <input type="checkbox" name="tl" id="2lie">
+        <label for="2lie">I have lived in 5 different states before.</label><br>
+    </form>
+    <p></p>
+    <input type="button" value="SUBMIT" onclick="truthandlie2();">
+
+    <script src="js/truth.js"></script>
 </body>
 </html>
